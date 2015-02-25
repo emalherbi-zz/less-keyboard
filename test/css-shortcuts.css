@@ -1,0 +1,33 @@
+.btn {
+  background: none repeat scroll 0 0 #eff0f2;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-top: 1px solid #F5F5F5;
+  -moz-box-shadow: 0 0 25px #E8E8E8 inset, 0 1px 0 #C3C3C3, 0 2px 0 #C9C9C9, 0 2px 3px #333333;
+  -webkit-box-shadow: 0 0 25px #E8E8E8 inset, 0 1px 0 #C3C3C3, 0 2px 0 #C9C9C9, 0 2px 3px #333333;
+  box-shadow: 0 0 25px #E8E8E8 inset, 0 1px 0 #C3C3C3, 0 2px 0 #C9C9C9, 0 2px 3px #333333;
+  color: #aaaaaa;
+  display: inline-block;
+  font: bold 9pt arial;
+  height: 41px;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #f5f5f5;
+  width: 44px;
+}
+.btn span.key {
+  display: block;
+  margin: 13.068px 0 0;
+  text-transform: uppercase;
+}
+.fn {
+  height: 26px;
+  width: 46px;
+}
+.esc {
+  font-size: 7.5pt;
+  margin: 6px 15px 0 0;
+  text-transform: lowercase;
+}
