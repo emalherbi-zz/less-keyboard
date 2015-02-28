@@ -16,16 +16,20 @@ module.exports = function(grunt) {
 
     /* compiling less */
     less: {
-      development: {
+      compile: {
         options: {
           compress: false,
           yuicompress: false,
           optimization: 2
+
+          // strictMath: true,
+          // sourceMap: true,
+          // outputSourceFiles: true,
+          // sourceMapURL: '<%= pkg.name %>.css.map',
+          // sourceMapFilename: '<%= properties.dist %>/<%= pkg.name %>.css.map'
         },
-        files: {
-          "<%= properties.dist %>/<%= pkg.name %>.css": "<%= pkg.name %>.less",
-          "<%= properties.test %>/<%= pkg.name %>.css": "<%= pkg.name %>.less"
-        }
+        src: '<%= properties.less %>/<%= pkg.name %>.less',
+        dest: '<%= properties.dist %>/<%= pkg.name %>.css'
       }
     },
 
@@ -42,17 +46,17 @@ module.exports = function(grunt) {
     //   },
     // },
     //
-    // /* put files not handled in other tasks here */
-    // copy: {
-    //   site: {
-    //     files: [{
-    //       expand: true,
-    //       dot: true,
-    //       src: ['<%= properties.dist %>/*.js'],
-    //       dest: 'docs/_site'
-    //     }]
-    //   }
-    // },
+    /* put files not handled in other tasks here */
+    copy: {
+      site: {
+        files: [{
+          expand: true,
+          dot: true,
+          src: '<%= properties.dist %>/<%= pkg.name %>.css',
+          dest: '<%= properties.test %>'
+        }]
+      }
+    }
     //
     // /* build jekyll */
     // shell: {
@@ -94,7 +98,8 @@ module.exports = function(grunt) {
 	// tasks
   grunt.registerTask('build', [
     'clean',
-    'less'
+    'less',
+    'copy'
   ]);
 
   grunt.registerTask('deploy', [
