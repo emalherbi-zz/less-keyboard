@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul ol {
+  list-style-type: none;
+}
+
+/***************************/
+/* Example by Tutorialzine */
+/***************************/
+
+/* content */
+.content {
+  margin: 20px auto;
+  max-width: 980px;
+  text-align: center;
+  width: 100%;
+}
