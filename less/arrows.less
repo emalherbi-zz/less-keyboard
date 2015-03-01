@@ -2,29 +2,32 @@
 
 .down {
   height: 23px;
+  margin: 0 5px 5px;
+
+  &:active {
+    margin: 3px 5px 4px;
+  }
 }
-.up, .left, .right {
-  height: 24px;
-}
-.left, .right {
-  margin: 30px 5px 5px;
-}
-.left:active, .right:active {
-  margin: 32px 5px 3px;
-}
+
 .up {
+  height: 24px;
   margin: 5px 5px 1px;
+
+  &:active {
+    margin: 8px 5px -2px;
+  }
+}
+
+.down, .up {
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
 }
-.up:active {
-  margin: 8px 5px -2px;
-}
-.down {
-  margin: 0 5px 5px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-}
-.down:active {
-  margin: 3px 5px 4px;
+
+.left, .right {
+  height: 24px;
+  margin: 30px 5px 5px;
+
+  &:active {
+    margin: 32px 5px 3px;
+  }
 }

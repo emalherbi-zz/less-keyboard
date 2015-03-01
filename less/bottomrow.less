@@ -2,34 +2,68 @@
 
 .bottomrow {
   height: 49px;
-}
-.bottomrow.fn {
-  height: 49px;
-}
 
-.bottomrow.optionleft, .bottomrow.optionright {
-  width: 46px;
-}
-.bottomrow.commandleft, .bottomrow.commandright {
-  width: 67px;
-}
-.bottomrow.spacebar {
-  width: 226px;
-}
-.bottomrow.control {
-  width: 54px;
-}
+  &.fn {
+    height: 49px;
 
-.bottomrow.fn span, .bottomrow.control span, .bottomrow.optionleft span, .bottomrow.commandleft span, .bottomrow.optionright span, .bottomrow.commandright span {
-  display: block;
-  font-size: 7.5pt;
-  text-transform: lowercase;
-}
-.bottomrow.fn span, .bottomrow.control span, .bottomrow.optionleft span, .bottomrow.commandleft span {
-  text-align: left;
-  margin: 31px 0 0 5px;
-}
-.bottomrow.optionright span, .bottomrow.commandright span {
-  text-align: right;
-  margin: 31px 5px 0 0;
+    > span {
+      display: block;
+      font-size: 7.5pt;
+      margin: 31px 0 0 5px;
+      text-transform: lowercase;
+      text-align: left;
+    }
+  }
+
+  &.optionleft, &.optionright {
+    width: 46px;
+
+    > span {
+      display: block;
+      font-size: 7.5pt;
+      text-transform: lowercase;
+    }
+  }
+
+  &.commandleft, &.commandright {
+    width: 67px;
+
+    > span {
+      display: block;
+      font-size: 7.5pt;
+      text-transform: lowercase;
+    }
+  }
+
+  &.optionleft, &.commandleft {
+
+    > span {
+      margin: 31px 0 0 5px;
+      text-align: left;
+    }
+  }
+
+  &.optionright, &.commandright {
+
+    > span {
+      margin: 31px 5px 0 0;
+      text-align: right;
+    }
+  }
+
+  &.spacebar {
+    width: 226px;
+  }
+
+  &.control {
+    width: 54px;
+
+    > span {
+      display: block;
+      font-size: 7.5pt;
+      margin: 31px 0 0 5px;
+      text-transform: lowercase;
+      text-align: left;
+    }
+  }
 }

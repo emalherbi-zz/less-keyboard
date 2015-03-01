@@ -16,48 +16,55 @@ module.exports = function(grunt) {
 
     /* compiling less */
     less: {
-      compile: {
+      dev: {
         options: {
           compress: false,
           yuicompress: false,
           optimization: 2
-
-          // strictMath: true,
-          // sourceMap: true,
-          // outputSourceFiles: true,
-          // sourceMapURL: '<%= pkg.name %>.css.map',
-          // sourceMapFilename: '<%= properties.dist %>/<%= pkg.name %>.css.map'
         },
         src: '<%= properties.less %>/<%= pkg.name %>.less',
         dest: '<%= properties.dist %>/<%= pkg.name %>.css'
+      },
+      prodution: {
+        options: {
+          compress: true,
+          yuicompress: true,
+          optimization: 2
+        },
+        src: '<%= properties.less %>/<%= pkg.name %>.less',
+        dest: '<%= properties.dist %>/<%= pkg.name %>.min.css'
       }
     },
 
-    // /* concat files */
-    // concat: {
-    //   options: {
-    //     banner: '<%= banner %>',
-    //     stripBanners: false
-    //   },
-    //   basic_and_extras: {
-    //     files: {
-    //        "<%= properties.dist %>/<%= pkg.name %>.less" : ['<%= pkg.name %>.less']
-    //     },
-    //   },
-    // },
-    //
+    /* use banner */
+    usebanner: {
+      taskName: {
+        options: {
+          position: 'top',
+          banner: '<%= banner %>',
+          linebreak: true
+        },
+        files: {
+          src: [
+            '<%= properties.dist %>/<%= pkg.name %>.css',
+            '<%= properties.dist %>/<%= pkg.name %>.min.css'
+          ]
+        }
+      }
+    },
+
     /* put files not handled in other tasks here */
     copy: {
       site: {
         files: [{
           expand: true,
-          dot: true,
-          src: '<%= properties.dist %>/<%= pkg.name %>.css',
+          cwd: '<%= properties.dist %>',
+          src: '<%= pkg.name %>.min.css',
           dest: '<%= properties.test %>'
         }]
       }
     }
-    //
+
     // /* build jekyll */
     // shell: {
     //   jekyllBuild: {
@@ -99,6 +106,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'clean',
     'less',
+    'usebanner',
     'copy'
   ]);
 
