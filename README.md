@@ -42,37 +42,37 @@ Add Css Keyboard To Your Web App
 ### Tab
 
 ```html
-<li><a href="#" class="key tab"><span>tab</span></a></li>
+<a href="#" class="key tab"><span>tab</span></a>
 ```
 
 ### Q, W, E, R, T, Y ...
 
 ```html
-<li><a href="#" class="key qwerty"><span>q</span></a></li>
+<a href="#" class="key qwerty"><span>q</span></a>
 ```
 
 ### Caps Lock
 
 ```html
-<li><a href="#" class="key caps" ><b></b><span>caps lock</span></a></li>
+<a href="#" class="key caps" ><b></b><span>caps lock</span></a>
 ```
 
 ### A, S, D, F, G ...
 
 ```html
-<li><a href="#" class="key asdfg"><span>a</span></a></li>
+<a href="#" class="key asdfg"><span>a</span></a>
 ```
 
 ### Shift
 
 ```html
-<li><a href="#" class="key shiftleft"><span>Shift</span></a></li>
+<a href="#" class="key shiftleft"><span>Shift</span></a>
 ```
 
 ### Z, X, C, V, B ...
 
 ```html
-<li><a href="#" class="key zxcvb"><span>z</span></a></li>
+<a href="#" class="key zxcvb"><span>z</span></a>
 ```
 
 [See More](http://emalherbi.github.io/less-keyboard/)
