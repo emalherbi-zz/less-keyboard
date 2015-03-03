@@ -53,12 +53,25 @@ css-shortcuts
 <li><a href="#" class="key caps" ><b></b><span>caps lock</span></a></li>
 ```
 
-
 ### A, S, D, F, G ...
 
 ```html
 <li><a href="#" class="key asdfg"><span>a</span></a></li>
 ```
+
+### Shift
+
+```html
+<li><a href="#" class="key shiftleft"><span>Shift</span></a></li>
+```
+
+### Z, X, C, V, B ...
+
+```html
+<li><a href="#" class="key zxcvb"><span>z</span></a></li>
+```
+
+[See +](http://emalherbi.github.io/css-shortcuts/)
 
 ## Contributing
 
