@@ -1,6 +1,8 @@
 css-shortcuts
 =========
 
+Add Keyboard Shortcuts To Your Web App
+
 <img align="center" src="http://emalherbi.github.io/css-shortcuts/img/readme.png">
 
 ## Usage
