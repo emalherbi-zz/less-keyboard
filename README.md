@@ -8,26 +8,45 @@ css-shortcuts
 ### ESC
 
 ```html
-<a class="key esc" href="#">
-  <span>esc</span>
-</a>
+<a class="key esc" href="#"><span>esc</span></a>
 ```
 
 ### F1, F2 ...
 
 ```html
-<a class="key fn" href="#">
-  <span>F1</span>
-</a>
+<a class="key fn" href="#"><span>F1</span></a>
 ```
 
 ### Eject
 
 ```html
-<a class="key fn" href="#">
-  <span>Eject</span>
-</a>
+<a class="key fn" href="#"><span>Eject</span></a>
 ```
+
+### 1, 2, 3 ...
+
+```html
+<a class="key number" href="#"><b>!</b><span>1</span></a>
+```
+
+### Delete
+
+```html
+<a href="#" class="key delete"><span>Delete</span></a>
+```
+
+### Tab
+
+```html
+<li><a href="#" class="key tab"><span>tab</span></a></li>
+```
+
+### Q, W, E ...
+
+```html
+<li><a href="#" class="key qwerty"><span>q</span></a></li>
+```
+
 
 ## Contributing
 
