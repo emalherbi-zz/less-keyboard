@@ -1,9 +1,11 @@
-css-shortcuts
+less-keyboard
 =========
 
-Add Keyboard Shortcuts To Your Web App
+Add Css Keyboard To Your Web App
 
-<img align="center" src="http://emalherbi.github.io/css-shortcuts/img/readme.png">
+<img align="center" src="http://emalherbi.github.io/less-keyboard/img/readme.png">
+
+
 
 ## Usage
 
@@ -73,7 +75,9 @@ Add Keyboard Shortcuts To Your Web App
 <li><a href="#" class="key zxcvb"><span>z</span></a></li>
 ```
 
-[See More](http://emalherbi.github.io/css-shortcuts/)
+[See More](http://emalherbi.github.io/less-keyboard/)
+
+
 
 ## Contributing
 
@@ -84,12 +88,6 @@ Add Keyboard Shortcuts To Your Web App
 5. Commit your changes (`git commit -am 'Added some feature'`)
 6. Push to the branch (`git push origin my-new-feature`)
 7. Create new Pull Request
-
-
-
-## Creator
-
-Created and maintained by [Eduardo Malherbi](https://github.com/emalherbi).
 
 
 
