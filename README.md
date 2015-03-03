@@ -41,12 +41,24 @@ css-shortcuts
 <li><a href="#" class="key tab"><span>tab</span></a></li>
 ```
 
-### Q, W, E ...
+### Q, W, E, R, T, Y ...
 
 ```html
 <li><a href="#" class="key qwerty"><span>q</span></a></li>
 ```
 
+### Caps Lock
+
+```html
+<li><a href="#" class="key caps" ><b></b><span>caps lock</span></a></li>
+```
+
+
+### A, S, D, F, G ...
+
+```html
+<li><a href="#" class="key asdfg"><span>a</span></a></li>
+```
 
 ## Contributing
 
