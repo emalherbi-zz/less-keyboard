@@ -1,7 +1,7 @@
 less-keyboard
 =========
 
-Add css keyboard to your web app!
+Add quote keys on your keyboard in your web applications!
 
 <img align="center" src="http://emalherbi.github.io/less-keyboard/img/readme.png">
 
