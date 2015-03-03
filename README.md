@@ -1,31 +1,33 @@
 css-shortcuts
 =========
 
-<img align="center" height="150" src="http://emalherbi.github.io/css-shortcuts/img/readme.png">
+<img align="center" src="http://emalherbi.github.io/css-shortcuts/img/readme.png">
 
-Functions in javascript, jquery, jquery-ui, to help developers in simple situations of your workday.
+## Usage
 
-## Bower.io
+### ESC
 
-This package is available on Bower.
-
-#### Installing
-
-```sh
-# install a package and add it to bower.json
-$ bower install ejs-utils --save
+```html
+<a class="key esc" href="#">
+  <span>esc</span>
+</a>
 ```
 
-#### Install Bower.io
+### F1, F2 ...
 
-```sh
-$ npm install -g bower
+```html
+<a class="key fn" href="#">
+  <span>F1</span>
+</a>
 ```
 
-Bower depends on [Node.js](http://nodejs.org/) and [npm](http://npmjs.org/). Also make sure that [git](http://git-scm.com/) is installed as some bower
-packages require it to be fetched and installed.
+### Eject
 
-
+```html
+<a class="key fn" href="#">
+  <span>Eject</span>
+</a>
+```
 
 ## Contributing
 
