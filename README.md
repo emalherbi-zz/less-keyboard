@@ -1,7 +1,7 @@
 less-keyboard
 =========
 
-Add Css Keyboard To Your Web App
+Add css keyboard to your web app!
 
 <img align="center" src="http://emalherbi.github.io/less-keyboard/img/readme.png">
 
