@@ -1,8 +1,9 @@
-ejs-utils
+css-shortcuts
 =========
 
-Functions in javascript, jquery, jquery-ui, to help developers in simple situations of your workday. 
-<img align="right" height="150" src="http://bower.io/img/bower-logo.png">
+<img align="center" height="150" src="http://emalherbi.github.io/css-shortcuts/img/readme.png">
+
+Functions in javascript, jquery, jquery-ui, to help developers in simple situations of your workday.
 
 ## Bower.io
 
@@ -26,21 +27,6 @@ packages require it to be fetched and installed.
 
 
 
-## Documentation
-
-Ejs-utils documentation, included in this repo in the docs directory, is built with [Jekyll](http://jekyllrb.com) and publicly hosted on GitHub Pages at <http://emalherbi.github.io/ejs-utils/>. The docs may also be run locally.
-
-### Running documentation locally
-
-1. If necessary, [install Jekyll](http://jekyllrb.com/docs/installation) (requires v2.3.x).
-  - **Windows users:** Read [this unofficial guide](http://jekyll-windows.juthilo.com/) to get Jekyll up and running without problems.
-2. From the root `/ejs-utils` directory, run `jekyll serve` in the command line.
-3. Open <http://localhost:4000> in your browser, and voilà.
-
-Learn more about using Jekyll by reading its [documentation](http://jekyllrb.com/docs/home/).
-
-
-
 ## Contributing
 
 1. Fork it
@@ -55,7 +41,7 @@ Learn more about using Jekyll by reading its [documentation](http://jekyllrb.com
 
 ## Creator
 
-Created by Eduardo Malherbi, and maintained by [Bigodes Team](https://github.com/bigodes).
+Created and maintained by [Eduardo Malherbi](https://github.com/emalherbi).
 
 
 

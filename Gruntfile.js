@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 
     /* compiling less */
     less: {
-      dev: {
+      css: {
         options: {
           compress: false,
           yuicompress: false,
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
         src: '<%= properties.less %>/<%= pkg.name %>.less',
         dest: '<%= properties.dist %>/<%= pkg.name %>.css'
       },
-      prodution: {
+      'css-min': {
         options: {
           compress: true,
           yuicompress: true,
@@ -58,40 +58,21 @@ module.exports = function(grunt) {
       site: {
         files: [{
           expand: true,
-          cwd: '<%= properties.dist %>',
           src: '<%= pkg.name %>.min.css',
-          dest: '<%= properties.test %>'
+          cwd: '<%= properties.dist %>',
+          dest: '<%= properties.test %>/css'
         }]
       }
-    }
+    },
 
-    // /* build jekyll */
-    // shell: {
-    //   jekyllBuild: {
-    //     command: 'jekyll build --source docs --destination docs/_site'
-    //   }
-    // },
-    //
-    // /* commit on gh-pages github */
-    // 'gh-pages': {
-    //   options: {
-    //     base: 'docs/_site/',
-    //     message: 'auto-generated commit'
-    //   },
-    //   src: ['**/*']
-    // },
-    //
-    // /* update bower json */
-    // bump: {
-    //   options: {
-    //     files: ['package.json', 'bower.json'],
-    //     updateConfigs: ['pkg'],
-    //     commit: true,
-    //     commitFiles: ['-a'], // all Files
-    //     push: true,
-    //     pushTo: 'origin'
-    //   }
-    // }
+    /* commit on gh-pages github */
+    'gh-pages': {
+      options: {
+        base: '<%= properties.test %>',
+        message: 'auto-generated commit'
+      },
+      src: ['**/*']
+    }
 
 	});
 
@@ -112,11 +93,10 @@ module.exports = function(grunt) {
 
   grunt.registerTask('deploy', [
     'clean',
-    'concat',
-    'shell',
+    'less',
+    'usebanner',
     'copy',
-    'gh-pages',
-    'bump'
+    'gh-pages'
   ]);
 
   grunt.registerTask('default', [

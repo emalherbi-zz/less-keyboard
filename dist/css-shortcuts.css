@@ -44,6 +44,10 @@
       0 0 3px #333;
   border-top: 1px solid #eee;
 }
+.key > span,
+.key > b {
+  background: inherit;
+}
 /* fn */
 .fn {
   height: 26px;
