@@ -71,7 +71,7 @@ css-shortcuts
 <li><a href="#" class="key zxcvb"><span>z</span></a></li>
 ```
 
-[See +](http://emalherbi.github.io/css-shortcuts/)
+[See More](http://emalherbi.github.io/css-shortcuts/)
 
 ## Contributing
 
